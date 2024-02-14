@@ -35,14 +35,11 @@
 //     The number of ways to split the given string
 
 const { filter } = require("lodash");
-
 function solution(s) {
     let solutions = [];
-    
             function filterDuplicates(arr) {
                 return arr.filter((value, index, self) => self.indexOf(value) === index);
             }
-
     for(let i = 0; i < s.length; i++) {
         for(let j = i+1; j < s.length; j++) {
             let a = s.slice(0, i);
@@ -51,11 +48,7 @@ function solution(s) {
             solutions.push(a+b);
             solutions.push(b+c);
             solutions.push(c+a);
-            
         }
-        
-        
-        
     }
         filterDuplicates(solutions);
         return filterDuplicates(solutions).length 
