@@ -17,3 +17,4 @@
 //neither arrays have elements larger than 9, so they both have 0. So the shorter array takes 9
 //arr1[5,9]
 //aar2[7,6]
+// if I stopped here cause im lazy, id return [5,9, 7,6]
